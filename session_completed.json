@@ -1,0 +1,121 @@
+{
+    "id": "cs_test_a12hozZesjrYtE87ZP6b7jNpQYYyKiuxrm6Yne7N5upS8Bksv04KGNQeZA",
+    "object": "checkout.session",
+    "adaptive_pricing": {
+        "enabled": true
+    },
+    "after_expiration": null,
+    "allow_promotion_codes": null,
+    "amount_subtotal": 999,
+    "amount_total": 999,
+    "automatic_tax": {
+        "enabled": false,
+        "liability": null,
+        "status": null
+    },
+    "billing_address_collection": null,
+    "cancel_url": "http://localhost:3000/billing",
+    "client_reference_id": null,
+    "client_secret": null,
+    "collected_information": {
+        "shipping_details": null
+    },
+    "consent": null,
+    "consent_collection": null,
+    "created": 1743139987,
+    "currency": "usd",
+    "currency_conversion": null,
+    "custom_fields": [],
+    "custom_text": {
+        "after_submit": null,
+        "shipping_address": null,
+        "submit": null,
+        "terms_of_service_acceptance": null
+    },
+    "customer": "cus_S1YfhV83xC64EB",
+    "customer_creation": "if_required",
+    "customer_details": {
+        "address": {
+            "city": "Rajkot",
+            "country": "IN",
+            "line1": "\"Aum\", Satyen Vora, Income tax society, street no.2,",
+            "line2": "near swapnasiddhi park, airport road",
+            "postal_code": "360007",
+            "state": "GJ"
+        },
+        "email": "devvora08@gmail.com",
+        "name": "dev vora",
+        "phone": null,
+        "tax_exempt": "none",
+        "tax_ids": []
+    },
+    "customer_email": null,
+    "discounts": [],
+    "expires_at": 1743226386,
+    "invoice": "in_1R7VXtSF01c469QgEAFnlM83",
+    "invoice_creation": {
+        "enabled": true,
+        "invoice_data": {
+            "account_tax_ids": null,
+            "custom_fields": null,
+            "description": null,
+            "footer": null,
+            "issuer": {
+                "type": "self"
+            },
+            "metadata": {},
+            "rendering_options": null
+        }
+    },
+    "livemode": false,
+    "locale": null,
+    "metadata": {
+        "userId": "user_2utiY3GTYhdg1pVJR53wbYP0jPV",
+        "packId": "SMALL"
+    },
+    "mode": "payment",
+    "payment_intent": "pi_3R7VXoSF01c469Qg0vW6J7HO",
+    "payment_link": null,
+    "payment_method_collection": "if_required",
+    "payment_method_configuration_details": {
+        "id": "pmc_1R7FFoSF01c469Qg6PfjxLRS",
+        "parent": null
+    },
+    "payment_method_options": {
+        "card": {
+            "request_three_d_secure": "automatic"
+        }
+    },
+    "payment_method_types": [
+        "card"
+    ],
+    "payment_status": "paid",
+    "permissions": null,
+    "phone_number_collection": {
+        "enabled": false
+    },
+    "recovered_from": null,
+    "saved_payment_method_options": {
+        "allow_redisplay_filters": [
+            "always"
+        ],
+        "payment_method_remove": null,
+        "payment_method_save": null
+    },
+    "setup_intent": null,
+    "shipping_address_collection": null,
+    "shipping_cost": null,
+    "shipping_details": null,
+    "shipping_options": [],
+    "status": "complete",
+    "submit_type": null,
+    "subscription": null,
+    "success_url": "http://localhost:3000/billing",
+    "total_details": {
+        "amount_discount": 0,
+        "amount_shipping": 0,
+        "amount_tax": 0
+    },
+    "ui_mode": "hosted",
+    "url": null
+}

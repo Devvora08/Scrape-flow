@@ -16,18 +16,80 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer base {
+  :root {
+    --background: 265 50% 98%; /* Soft lavender */
+    --foreground: 270 60% 8%; /* Deep purple */
+    --card: 265 50% 96%;
+    --card-foreground: 270 60% 12%;
+    --popover: 265 50% 97%;
+    --popover-foreground: 270 60% 12%;
+    --primary: 275 85% 30%; /* Muted purple */
+    --primary-foreground: 275 50% 90%;
+    --secondary: 275 35% 88%;
+    --secondary-foreground: 275 50% 15%;
+    --muted: 275 25% 90%;
+    --muted-foreground: 275 20% 35%;
+    --accent: 275 35% 85%;
+    --accent-foreground: 275 50% 12%;
+    --destructive: 345 70% 50%;
+    --destructive-foreground: 270 60% 95%;
+    --border: 275 30% 85%;
+    --input: 275 30% 85%;
+    --ring: 275 85% 40%;
+    --radius: 0.75rem;
+    --chart-1: 278 76% 35%;
+    --chart-2: 265 58% 25%;
+    --chart-3: 285 37% 20%;
+    --chart-4: 260 74% 30%;
+    --chart-5: 290 87% 25%;
+  }
+
+  .dark {
+    --background: 265 50% 2%; /* Almost black with deep purple undertone */
+    --foreground: 270 60% 92%;
+    --card: 265 50% 3%;
+    --card-foreground: 270 60% 96%;
+    --popover: 265 50% 4%;
+    --popover-foreground: 270 60% 96%;
+    --primary: 275 85% 20%; /* Very dark purple */
+    --primary-foreground: 275 50% 92%;
+    --secondary: 275 35% 6%;
+    --secondary-foreground: 275 50% 90%;
+    --muted: 275 25% 5%;
+    --muted-foreground: 275 20% 45%;
+    --accent: 275 35% 8%;
+    --accent-foreground: 275 50% 90%;
+    --destructive: 345 70% 35%;
+    --destructive-foreground: 270 50% 96%;
+    --border: 275 30% 8%;
+    --input: 275 30% 10%;
+    --ring: 275 85% 25%;
+    --chart-1: 278 76% 20%;
+    --chart-2: 265 58% 15%;
+    --chart-3: 285 37% 10%;
+    --chart-4: 260 74% 15%;
+    --chart-5: 290 87% 10%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+.react-flow__attribution {
+  background: transparent !important;
 }
