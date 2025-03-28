@@ -9,8 +9,9 @@ export async function LauchBrowserExecutor(environment : ExecutionEnvironment<ty
         const websiteUrl = environment.getInput("Website Url");
         //console.log("URL: ", websiteUrl)
         const browser = await puppeteer.launch({
-            headless: false
-        })
+            args: ["--no-sandbox", "--disable-setuid-sandbox"],
+            headless: true, // OR "new" for newer versions
+          });
         environment.log.info("Browser started successfully")
         environment.setBrowser(browser);
         const page = await browser.newPage();
